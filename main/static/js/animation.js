@@ -67,7 +67,7 @@ function scrollActive(){
     document.querySelector('html').style.position='static';
 }
 function sliderOutOnBodyTouch(){
-    const doc=document.querySelector('#Opac-slider');
+    const doc=document.querySelector('body');
     const navSlide=document.querySelector('.slider-main');
     doc.addEventListener('touchend', () => {
         if(navSlide.classList.contains('active')){
