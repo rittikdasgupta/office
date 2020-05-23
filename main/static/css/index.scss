@@ -149,10 +149,11 @@ html{
 //SERVICE CARDS
 .card-wrapper{
     width:100%;
+    height: 50%;
     position: absolute;
     top:60vh;
     .card-container{
-        width:90%;
+        width:100%;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -163,6 +164,18 @@ html{
             border-radius: 20px;
             box-shadow: -6px 7px 16px 4px rgba(82,82,82,1);
             text-align: center;
+            // #card-icon{
+            //     font-size: 15px;
+            //     justify-content: center;
+            //     display: -webkit-box;
+            //     display: -ms-flexbox;
+            //     display: flex;
+            //     -webkit-box-align: center;
+            //     -ms-flex-align: center;
+            //     align-items: center;
+            //     font-weight: bold;
+            //     padding-bottom: 50px;
+            // }
             #card-text{
                 color:black;
                 font-family: bahnschrift;
