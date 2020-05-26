@@ -163,6 +163,7 @@ html {
 
 .card-wrapper {
   width: 100%;
+  height: 60%;
   position: absolute;
   top: 60vh;
 }
@@ -179,7 +180,25 @@ html {
       flex-wrap: wrap;
 }
 
+.card-wrapper .card-container #card1:hover {
+  transition: all .3s ease-in-out;
+  transform: scale(1.2);
+}
+.card-wrapper .card-container #card2:hover {
+  transition: all .3s ease-in-out;
+  transform: scale(1.2);
+}
+.card-wrapper .card-container #card3:hover {
+  transition: all .3s ease-in-out;
+  transform: scale(1.2);
+}
+.card-wrapper .card-container #card4:hover {
+  transition: all .3s ease-in-out;
+  transform: scale(1.2);
+}
+
 .card-wrapper .card-container .text {
+  height: 70%;
   background-color: white;
   padding: 100px 0px 100px 0px;
   border: 1px solid white;
@@ -189,12 +208,44 @@ html {
   text-align: center;
 }
 
+.card-wrapper .card-container .text #card-icon {
+font-size: 15px;
+justify-content: center;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+font-weight: bold;
+padding-bottom: 50px;
+}
+
 .card-wrapper .card-container .text #card-text {
   color: black;
   font-family: bahnschrift;
   font-weight: 600;
-  font-size: 14;
+  font-size: 15px;
   width: 80px;
+  text-align: center;
+}
+.card-wrapper .card-container .text #right-arrow {
+display : none;
+}
+
+.card-wrapper .card-container .text:hover #right-arrow{
+font-size: 15px;
+justify-content: center;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+font-weight: bold;
+padding-top: 30px;
+display: block;
+transition: all .2s ease-in-out;
 }
 
 #business-section {
@@ -323,7 +374,7 @@ html {
 
 #crow3 .row .container .card .card-body .card-title {
   font-family: bahnschrift;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 500;
   padding-bottom: 15px;
 }
