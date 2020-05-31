@@ -53,8 +53,13 @@ html {
 }
 
 .navbar .navcont .navbar-brand {
+  display: block;
   height: 10vh;
   padding: 0;
+}
+
+.navbar .navcont .navbar-brand-mobile {
+  display: none;
 }
 
 .navbar .navcont .flexbox {
@@ -360,6 +365,10 @@ html {
   color: #b9b9b9;
 }
 
+#crow2 #illustration-2 {
+  display: block;
+}
+
 #crow2 #illustration-2 .container {
   width: 100%;
   padding: 0;
@@ -368,6 +377,10 @@ html {
 
 #crow2 #illustration-2 .container .illustration-align {
   padding: 0;
+}
+
+#crow2 #illustration-2-m {
+  display: none;
 }
 
 #crow3 {
@@ -460,6 +473,10 @@ html {
   color: #2b2b2b;
 }
 
+#crow4 #illustration-3 {
+  display: block;
+}
+
 #crow4 #illustration-3 .container {
   width: 100%;
   margin: auto;
@@ -468,6 +485,10 @@ html {
 
 #crow4 #illustration-3 .container .illustration-align {
   padding: 0;
+}
+
+#crow4 #illustration-3-m {
+  display: none;
 }
 
 #crow5 {
@@ -516,6 +537,10 @@ html {
   color: #2b2b2b;
 }
 
+#crow5 #illustration-4 {
+  display: block;
+}
+
 #crow5 #illustration-4 .container {
   width: 100%;
   margin: auto;
@@ -524,6 +549,10 @@ html {
 
 #crow5 #illustration-4 .container .illustration-align {
   padding: 0;
+}
+
+#crow5 #illustration-4-m {
+  display: none;
 }
 
 #crow6 {
@@ -737,6 +766,7 @@ html {
     border: 1px solid teal;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    background-color: #02323de5;
   }
   .navbar .navcont {
     width: 100%;
@@ -754,9 +784,13 @@ html {
         justify-content: space-around;
   }
   .navbar .navcont .navbar-header .navbar-brand {
+    display: none;
+  }
+  .navbar .navcont .navbar-header .navbar-brand-mobile {
+    display: block;
     padding: 0;
   }
-  .navbar .navcont .navbar-header .navbar-brand img {
+  .navbar .navcont .navbar-header .navbar-brand-mobile img {
     width: 150px;
     height: 20px;
   }
@@ -992,10 +1026,14 @@ html {
     text-align: center;
   }
   #crow2 .row #illustration-2 {
+    display: none;
+  }
+  #crow2 .row #illustration-2-m {
+    display: block;
     width: 100%;
     padding-bottom: 20px;
   }
-  #crow2 .row #illustration-2 .container {
+  #crow2 .row #illustration-2-m .container {
     width: 90%;
     margin: auto;
   }
@@ -1082,7 +1120,13 @@ html {
   #crow4 .row .button-section2 .container {
     text-align: center;
   }
-  #crow4 #illustration-3 .container {
+  #crow4 #illustration-3 {
+    display: none;
+  }
+  #crow4 #illustration-3-m {
+    display: block;
+  }
+  #crow4 #illustration-3-m .container {
     width: 100%;
     padding-bottom: 20px;
   }
@@ -1116,7 +1160,13 @@ html {
   #crow5 .row .button-section2 .container {
     text-align: center;
   }
-  #crow5 #illustration-4 .container {
+  #crow5 #illustration-4 {
+    display: none;
+  }
+  #crow5 #illustration-4-m {
+    display: block;
+  }
+  #crow5 #illustration-4-m .container {
     width: 100%;
     padding-bottom: 20px;
   }

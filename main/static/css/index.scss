@@ -54,8 +54,12 @@ html{
         border-bottom:1px solid white;
         padding:5px 15px;
         .navbar-brand{
+            display: block;
             height:10vh;
             padding:0;
+        }
+        .navbar-brand-mobile{
+            display: none;
         }
         .flexbox{
             width:70%;
@@ -308,6 +312,7 @@ html{
         }
      }
      #illustration-2{
+        display: block;
         .container{
             width:100%;
             padding:0;
@@ -316,6 +321,9 @@ html{
                 padding:0;
             }
         }
+     }
+     #illustration-2-m{
+        display: none;
      }
 }
 
@@ -393,6 +401,7 @@ html{
         }
     }
     #illustration-3{
+        display: block;
         .container{
             width:100%;
             margin: auto;
@@ -401,6 +410,9 @@ html{
                 padding:0;
             }
         }
+    }
+    #illustration-3-m{
+        display: none;
     }
 }
 #crow5{
@@ -442,6 +454,7 @@ html{
         }
     }
     #illustration-4{
+        display: block;
         .container{
             width:100%;
             margin: auto;
@@ -450,6 +463,9 @@ html{
                 padding:0;
             }
         }
+    }
+    #illustration-4-m{
+        display: none;
     }
 }
 #crow6{
@@ -608,6 +624,8 @@ html{
 #service-cards-xs,#register-section ,.footer-form-mobile {
     display: none;
 }
+
+
 //--------MEDIA QUERIES---------
 @media screen and (max-width:768px){
     .overlay1{
@@ -619,6 +637,7 @@ html{
         border:1px solid teal;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius:20px;
+        background-color: #02323de5;
         .navcont{
             width:100%;
             border-bottom: none;
@@ -628,6 +647,10 @@ html{
                 align-items: center;
                 justify-content:space-around;
                 .navbar-brand{
+                    display: none;
+                }
+                .navbar-brand-mobile{
+                    display: block;
                     padding:0;
                     img{
                         width:150px;
@@ -845,6 +868,10 @@ html{
                 }
             }
             #illustration-2{
+               display: none;
+            }
+            #illustration-2-m{
+                display: block;
                 width: 100%;
                 padding-bottom: 20px;
                 .container{
@@ -923,6 +950,10 @@ html{
             }
         }
         #illustration-3{
+            display: none;
+        }
+        #illustration-3-m{
+            display: block;
             .container{
                 width:100%;
                 padding-bottom:20px;
@@ -957,6 +988,10 @@ html{
             }
         }
         #illustration-4{
+            display: none;
+        }
+        #illustration-4-m{
+            display: block;
             .container{
                 width:100%;
                 padding-bottom:20px;
