@@ -34,7 +34,7 @@ html{
     margin:0;
     position: absolute;
     top:10vh;
-    background-image: url(../assets/backg1.png);
+    background-image: url(../assets/banner.png);
     background-repeat: no-repeat;
     background-size: contain;
     z-index:-1;
@@ -182,6 +182,7 @@ html{
         .card-content{
             background-color: white;
             padding:20px 0px 20px 0px;
+            height:25%;
             border: 1px solid white;
             border-radius: 20px;
             box-shadow: -6px 7px 16px 4px rgba(82,82,82,1);
@@ -224,6 +225,45 @@ html{
                 }
             }
         }
+        #card3,#card4{
+            padding:30px 0px;
+        }
+        #card1:hover{
+            padding-top:20px;
+            transform:translateY(-10%);
+            width:20%;
+            transition: 0.4s ;
+            .i1{
+                display: block;
+            }
+        }
+        #card2:hover{
+            padding-top:20px;
+            transform:translateY(-10%);
+            width:20%;
+            transition: 0.4s ;
+            .i2{
+                display: block;
+            }
+        }
+        #card3:hover{
+            padding-top:20px;
+            transform:translateY(-8%);
+            width:20%;
+            transition: 0.4s ;
+            .i3{
+                display: block;
+            }
+        }
+        #card4:hover{
+            padding-top:20px;
+            transform:translateY(-8%);
+            width:20%;
+            transition: 0.4s ;
+            .i4{
+                display: block;
+            }
+        }
     }
 }
 .active{
@@ -238,7 +278,7 @@ html{
      #crow1{
         padding-bottom:50px;
         .crow1-heading{
-            padding: 50px 5px 10px 5px;
+            padding: 50px 5px 10px 10px;
         }
      }
      .text-area{
@@ -250,27 +290,27 @@ html{
          }
          #text-sec1,#text-sec2,#text-sec3{
              padding-right: 20px;
-             padding-left: 20px;
+             padding-left: 40px;
          }
      }
-     #ntb-r-btn{
-         padding-top: 50px;
-         #ntb-text{
-             padding:5px 2px;
-             font-family: bahnschrift;
-             font-size: 15px;
-             font-weight: 500;
-         }
-         .btn{
-             color: white;
-             font-family:bahnschrift;
-             background-color: #008080ba;
-             border:1px solid #008080ba;
-             border-radius: 50rem;
-             padding:5px 15px 5px 15px;
-         }
-     }
- }
+    #ntb-r-btn{
+        padding-top: 50px;
+        #ntb-text{
+            padding:5px 2px;
+            font-family: bahnschrift;
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .btn{
+            color: white;
+            font-family:bahnschrift;
+            background-color: #008080ba;
+            border:1px solid #008080ba;
+            border-radius: 50rem;
+            padding:5px 15px 5px 15px;
+        }
+    }
+}
 
  //BUSINESS SECTION 2
  #crow2{
@@ -292,15 +332,14 @@ html{
         font-size: 15px;
         font-weight: 400;
         color:black; 
-        padding:20px;
+        padding:1s0px;
      }
      .button-section2{
-         margin-top:10%;
-         .container{
+        margin-top:4%;
+        .container{
              width:50%;
              margin:auto;
-             margin-bottom:10px;
-         }
+        }
         .know-more{
             border: 1px solid $knowMoreBtn1;
             border-radius: 50rem;
@@ -381,14 +420,13 @@ html{
         font-size: 15px;
         font-weight: 400;
         color:white; 
-        padding:20px;
+        padding:10px;
      }
      .button-section2{
-         margin-top:10%;
+        margin-top:5%;
         .container{
-             width:50%;
-             margin:auto;
-             margin-bottom:10px;
+            width:50%;
+            margin:auto;
         }
         .know-more{
             border: 1px solid $knowMoreBtn2;
@@ -599,6 +637,9 @@ html{
     margin:5px;
     color: white;
 }
+.footer-link:visited{
+    color:white;
+}
 .footer-icon-header{
     font-family:bahnschrift;
     font-size: 22px;
@@ -644,18 +685,15 @@ html{
             padding:20px;
             .navbar-header{
                 display:flex;
-                align-items: center;
+                align-items: flex-end;
                 justify-content:space-around;
+                width:100%;
                 .navbar-brand{
                     display: none;
                 }
                 .navbar-brand-mobile{
-                    display: block;
+                    display: flex;
                     padding:0;
-                    img{
-                        width:150px;
-                        height:20px;
-                    }
                 }
                 .hamburger{
                     display:block;
@@ -727,35 +765,36 @@ html{
         display: none;
     }
     #service-cards-xs{
-        width:95%;
+        width:90%;
         margin:auto;
         padding-top:30px;
         padding-bottom:30px;
         display: block;
         .service-tab-grid{
-            margin:20px auto;
+            margin:10px auto;
             .service-card-content-xs{
                 margin:auto;
-                box-shadow: 0px 0px 40px -2px rgb(161, 161, 161);
                 border-radius:5px;
-                display: flex;
-                align-items: center;
-                padding-top:10px;
-                padding-bottom:10px;
+                box-shadow: 0px 0px 18px 2px rgb(189, 189, 189);
+                padding:20px;
                 .service-symbol{
-                    padding:0;
+                    padding:10px;
+                    text-align: center;
                     i{
                         background-color: $navbarColor;
-                        padding:8px 11px;
+                        padding:10px 13px;
                         border-radius: 50rem;
                         color:white;
                         font-size:12px;
                     }
                     #code-sym2{
-                        padding:8px 7px;
+                        padding:10px 9px;
                     }
                     #code-sym3{
-                        padding:8px 8px;
+                        padding:10px 11px;
+                    }
+                    #code-sym4{
+                        padding:10px 12px;
                     }
                 }
                 .service-tab-content{
@@ -766,6 +805,10 @@ html{
                     margin:auto;
                 }
             }
+        }
+        #tab3, #tab4{
+            padding-top:30px;
+            padding-bottom: 30px;
         }
     }
     #service-tab-graphics{
@@ -780,23 +823,24 @@ html{
         margin:20px auto;
         display: block;
         .register-section-content{
-            display:flex;
-            align-items: center;
             #register-section-text{
-                font-size:12px;
+                font-size:18px;
                 padding-right:0;
                 text-align: center;
             }
             .register-btn-wrapper{
                 display: block;
-                padding-left: 0;
+                padding: 0;
+                text-align: center;
                 .register-btn{
                     color: white;
                     font-family:bahnschrift;
+                    font-size: 20px;
                     background-color: $registerBtnColor;
                     border:1px solid $registerBtnColor;
                     border-radius: 50rem;
-                    padding:5px 15px 5px 15px;
+                    padding:10px 20px;
+                    margin:10px auto;
                 }
             }
         }
@@ -806,7 +850,7 @@ html{
 
     //BUSINESS SECTION
     #business-section{
-        transform: translateY(-30vh);
+        transform: translateY(-4vh);
     }
 
     //UNMATCHED SERVICES
@@ -817,6 +861,16 @@ html{
             padding-top: 0px;
             #heading{
                 padding: 10px 5px 10px 5px;
+                #bs1a{
+                    #text-sec1{
+                        padding:10px 20px;
+                    }
+                }
+                #bs1b{
+                    #text-sec2{
+                        padding:20px;
+                    }
+                }
             }
         }
     }
@@ -831,7 +885,7 @@ html{
     #text-sec2 {
         padding-top: 16px;
         text-align:center;
-        font-size: 12px;
+        font-size: 14px;
         width:90%;
         margin: auto;
     }
@@ -850,6 +904,9 @@ html{
         .row{
             display: flex;
             flex-direction: column-reverse;
+            .first-half{
+                padding-top: 10px;
+            }
             #scl-mkt1{
                 font-size: 18px;
                 font-weight: bold;
@@ -858,13 +915,14 @@ html{
                 padding:0;
             }
             #scl-mkt2{
-                font-size:12px;
+                font-size:14px;
                 text-align: center;
                 padding:8px;
             }
             .button-section2{
                 .container{
                     text-align: center;
+                    padding:0;
                 }
             }
             #illustration-2{
@@ -932,6 +990,10 @@ html{
         .row{
             display: flex;
             flex-direction: column-reverse;
+            .first-half{
+                padding-left:0;
+                padding-top: 10px;
+            }
             #web-dev1{
                 text-align: center;
                 font-size: 18px;
@@ -939,9 +1001,9 @@ html{
                 padding:0px;
             }
             #web-dev2{
-                font-size:12px;
+                font-size:14px;
                 text-align: center;
-                padding:20px;
+                padding:20px 60px;
             }
             .button-section2{
                 .container{
@@ -969,6 +1031,10 @@ html{
         .row{
             display: flex;
             flex-direction: column-reverse;
+            .first-half{
+                padding-left:0;
+                padding-top: 10px;
+            }
             #gr-ds1{
                 text-align: center;
                 font-size: 18px;
@@ -976,9 +1042,9 @@ html{
                 padding:10px;
             }
             #gr-ds2{
-                font-size:12px;
+                font-size:14px;
                 text-align: center;
-                padding:10px 20px;
+                padding:10px 60px;
             }
             .button-section2{
                 padding-bottom: 20px;
@@ -1138,7 +1204,7 @@ html{
                     padding:2px 10px 2px 10px;
                 }
                 .form-control{
-                    height:20px;
+                    height:24px;
                 }
             }
         }
@@ -1160,12 +1226,22 @@ html{
     }
     //END FOOTER
 }
-@media (min-width:768px) and (max-width:880px){
+@media (min-height:768px) and (max-height:880px){
     #business-section{
-        transform: translateY(-50vh);
+        transform: translateY(-14vh);
     }
 }
-@media screen and (min-width:990px){
+@media (max-height:768px){
+    #business-section{
+        transform: translateY(-3vh);
+    }
+}
+@media (max-height:640px) and (max-width:384px){
+    #business-section{
+        transform: translateY(5vh);
+    }
+}
+@media screen and (min-width:768px){
     .slider-main{
         display: none;
     }
