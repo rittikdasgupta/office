@@ -75,6 +75,8 @@ function sliderOutOnBodyTouch(){
         }
     });
 }
+
+//SERVICE CARDS HOVER
 slider();
 sliderOut();
 sliderOutOnBodyTouch();

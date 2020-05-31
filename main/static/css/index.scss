@@ -30,31 +30,73 @@ html{
 // FIRST BACKGROUND IMAGE
 .overlay1{
     width:100%;
-    height:80vh;
+    height:90vh;
     margin:0;
     position: absolute;
+    top:10vh;
     background-image: url(../assets/backg1.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     z-index:-1;
 }
 
 //MAIN NAVBAR
 .navbar{
     min-height:10vh;
+    background-color: white;
     border:0;
     .navcont{
-        width:95%;
+        width:90%;
+        margin: auto;
+        display:flex;
+        justify-content: space-between;
+        align-items: flex-start;
         border-bottom:1px solid white;
-        padding:20px 15px 20px 15px;
+        padding:5px 15px;
+        .navbar-brand{
+            height:10vh;
+            padding:0;
+        }
+        .flexbox{
+            width:70%;
+            z-index: 4;
+            .sub-nav{
+                width:80%;
+                margin: auto;
+                margin-right:0;
+                list-style-type: none;
+                padding-left:0;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                z-index: 4;
+                .item{
+                    justify-content: space-between;
+                    text-decoration: none;
+                    .subnav-link{
+                        font-family:  bahnschrift;
+                        font-size: 14px;
+                        font-weight: 600;
+                        color:$knowMoreBtn1;
+                        margin-bottom: 3px;
+                    }
+                    .subnav-nav-link{
+                        font-family: bahnschrift;
+                        font-size: 12px;
+                        font-weight: 500;
+                        color:$knowMoreBtn1;
+                    }
+                }
+                .item:hover{
+                    border-bottom: 1px solid white;
+                }
+            }
+        }
     }
     .hamburger{
         display: none;
     }
-}
-.navbar-inverse{
-    background-color: transparent;
-    color:black;
 }
 .navbar-toggle{
     border:none;
@@ -88,49 +130,9 @@ html{
     background-color: white;
 }
 
-//SUB NAVBAR
-.flexbox{
-    width:85%;
-    margin: auto;
-    min-height: 8vh;
-    display: flex;
-    z-index: 4;
-    .sub-nav{
-        width:100%;
-        margin: auto;
-        list-style-type: none;
-        padding-left:0;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        z-index: 4;
-        .item{
-            justify-content: space-between;
-            text-decoration: none;
-            .subnav-link{
-                font-family:  bahnschrift;
-                font-size: 14px;
-                font-weight: 600;
-                color:white;
-                margin-bottom: 3px;
-            }
-            .subnav-nav-link{
-                font-family: bahnschrift;
-                font-size: 12px;
-                font-weight: 500;
-                color:white;
-            }
-        }
-        .item:hover{
-            border-bottom: 1px solid white;
-        }
-    }
-}
-
 //HERO TEXT WRAPPER
 .hero-text-wrapper{
-    padding-top:100px;
+    padding-top:14vh;
     width:100%;
     z-index: 4;
     .hero-text-container{
@@ -140,8 +142,23 @@ html{
         #hero-text{
             font-family:bahnschrift;
             font-weight: 800;
-            font-size: 35px;
+            font-size: 4vw;
+            color:$knowMoreBtn1;
+        }
+    }
+    .hero-text-2-container{
+        width:80%;
+        margin:4vh auto;
+        text-align: center;
+        padding:0px;
+        #hero-text-2{
+            font-family: bahnschrift;
+            font-weight: normal;
+            font-size: 2vw;
             color:white;
+            background-color: $knowMoreBtn1;
+            border-radius: 50rem;
+            padding:10px 20px;
         }
     }
 }
@@ -149,16 +166,18 @@ html{
 //SERVICE CARDS
 .card-wrapper{
     width:100%;
+    height: 50%;
     position: absolute;
     top:60vh;
     .card-container{
-        width:90%;
+        width:80%;
+        margin:auto;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        .text{
+        .card-content{
             background-color: white;
-            padding:100px 0px 100px 0px;
+            padding:20px 0px 20px 0px;
             border: 1px solid white;
             border-radius: 20px;
             box-shadow: -6px 7px 16px 4px rgba(82,82,82,1);
@@ -167,16 +186,49 @@ html{
                 color:black;
                 font-family: bahnschrift;
                 font-weight: 600;
-                font-size: 14;
-                width:80px;
+                font-size: 14px;
+            }
+            .row-wrapper-header{
+                margin:0px 0px 20px;
+            }
+            #card-header-icon{
+                background-color: $knowMoreBtn1;
+                color:white;
+                border-radius:50rem;
+            }
+            .icon-1{
+                padding:20px 27.5px;
+            }
+            .icon-2{
+                padding:20px 18px;
+            }
+            .icon-3{
+                padding:20px;
+            }
+            .icon-4{
+                padding:20px 24.5px;
+            }
+            #row-wrapper-footer{
+                display: none;
+                #right-arrow{
+                    i{
+                        color:white;
+                        background-color: $registerBtnColor;
+                        padding:5px 12px;
+                        border-radius: 50rem;
+                    }
+                }
             }
         }
     }
 }
+.active{
+    display: block;
+}
  //BUSINESS SECTION 1
  #business-section{
      position:absolute;
-     top:100vh;
+     top:90vh;
      width:100%;
      margin:auto;
      #crow1{
@@ -219,12 +271,15 @@ html{
  //BUSINESS SECTION 2
  #crow2{
      background-color: $smmBgColor;
-     padding:50px;
+     padding:0px;
      width:100%;
+     .first-half{
+         padding:50px 50px 0px 50px;
+     }
      .heading{
         font-family: bahnschrift;
-        font-size: 30px;
-        font-weight: 500;
+        font-size: 40px;
+        font-weight: 800;
         color:black;
         padding:20px;
      }
@@ -254,8 +309,12 @@ html{
      }
      #illustration-2{
         .container{
-            width:90%;
+            width:100%;
+            padding:0;
             margin: auto;
+            .illustration-align{
+                padding:0;
+            }
         }
      }
 }
@@ -297,12 +356,15 @@ html{
 }
 #crow4{
     width:100%;
-    padding:50px;
+    padding:0px;
     background-color: $wddBgColor;
+    .first-half{
+        padding:50px 0px 0px 50px;
+    }
     .heading{
         font-family: bahnschrift;
-        font-size: 30px;
-        font-weight: 500;
+        font-size: 40px;
+        font-weight: 800;
         color:white;
         padding:20px;
      }
@@ -332,22 +394,28 @@ html{
     }
     #illustration-3{
         .container{
-            width:95%;
+            width:100%;
             margin: auto;
+            padding:0;
+            .illustration-align{
+                padding:0;
+            }
         }
     }
 }
 #crow5{
     width:100%;
-    padding:50px;
+    padding:0px;
     background-color: $gdBgColor;
+    .first-half{
+        padding:50px 0px 0px 50px;
+    }
     .heading{
         font-family: bahnschrift;
-        font-size: 30px;
-        font-weight: 500;
+        font-size: 40px;
+        font-weight: 800;
         color:white;
         padding:20px;
-        padding-top:0px;
      }
      .s-text{
         font-family: bahnschrift;
@@ -377,6 +445,10 @@ html{
         .container{
             width:100%;
             margin: auto;
+            padding:0;
+            .illustration-align{
+                padding:0;
+            }
         }
     }
 }
