@@ -8,3 +8,5 @@ def contact(request):
     return render(request, 'main/contact.html')
 def webdesign(request):
     return render(request,'main/wb.html')
+def graphicsdesign(request):
+    return render(request,'main/graphics.html')

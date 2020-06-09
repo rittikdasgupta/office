@@ -44,7 +44,7 @@ body {
 }
 
 #content-wrapper .sec-2 #sub-text {
-  font-size: 14px;
+  font-size: 24px;
 }
 
 #content-wrapper .sec-1 {
@@ -167,9 +167,18 @@ body {
     padding-right: 0px;
     padding-left: 0px;
   }
+  #content-wrapper #section4 #sec-4-left {
+    text-align: center;
+  }
   #content-wrapper #section4 #sec-4-left #sub-section1 #sec-4-left-text1 {
-    font-size: 17px;
+    font-size: 25px;
     font-weight: 600;
+  }
+  #content-wrapper #section4 #sec-4-left #sub-section2 .sec-4-btn {
+    font-size: 18px;
+  }
+  #content-wrapper #section4 #right {
+    display: none;
   }
   #content-wrapper #section5 {
     height: 200px;
