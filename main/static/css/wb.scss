@@ -154,12 +154,21 @@ body{
             padding-right: 0px;
             padding-left: 0px;
             #sec-4-left{
+                text-align: center;
                 #sub-section1{
                     #sec-4-left-text1{
-                        font-size: 17px;
+                        font-size: 25px;
                         font-weight: 600;
                     }
                 }
+                #sub-section2{
+                    .sec-4-btn{
+                        font-size: 18px;
+                    }
+                }
+            }
+            #right{
+                display: none;
             }
         }
         #section5{
