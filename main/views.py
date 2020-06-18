@@ -19,3 +19,7 @@ def graphicsdesign(request):
 def socialmedia(request):
     return render(request,'main/socialmedia.html')
 
+def team(request):
+    return render(request,'main/team.html')
+def contact(request):
+    return render(request,'main/contact.html')

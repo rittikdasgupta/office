@@ -66,17 +66,20 @@ body {
 #container-wrapper #section4 .sec-4 #sec-4-text {
   font-size: 20px;
   font-weight: 100;
+  width: 90%;
+  margin: auto;
 }
 
 #container-wrapper #section4 .sec-4 .button {
   padding-top: 50px;
+  width: 90%;
+  margin: auto;
 }
 
 #container-wrapper #section4 .sec-4 .button .sec-4-btn {
   background: teal;
   color: white;
   border-radius: 50rem;
-  margin: 10px;
   font-size: 22px;
 }
 
