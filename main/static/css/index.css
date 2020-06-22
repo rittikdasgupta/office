@@ -61,7 +61,7 @@ body {
 .hero-text-wrapper .form-wrapper .main-form .form-group i {
   position: relative;
   left: 15px;
-  top: 32px;
+  top: 35px;
 }
 
 .hero-text-wrapper .form-wrapper .main-form .form-control {
@@ -753,11 +753,10 @@ body {
   #serv-img {
     display: none;
   }
-  #crow2 {
+  .crow2 {
     border-radius: 20px;
-    padding: 30px 15px;
   }
-  #crow2 .row {
+  .crow2 .row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -766,34 +765,36 @@ body {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  #crow2 .row .first-half {
+  .crow2 .row .first-half {
+    padding-top: 0px;
+    text-align: center;
+  }
+  .crow2 .row .first-half #scl-mkt1, .crow2 .row .first-half #gr-ds1 {
+    text-align: center;
+    padding-right: 120px;
+    font-size: 23px;
+  }
+  .crow2 .row .first-half #scl-mkt2, .crow2 .row .first-half #gr-ds2 {
+    padding-left: 0px;
+    text-align: center;
+    padding-right: 100px;
+  }
+  .crow2 .row .first-half .button-section2 .container {
+    padding-left: 0px;
+    padding-right: 230px;
     padding-top: 10px;
+    padding-bottom: 30px;
   }
-  #crow2 .row #scl-mkt1 {
-    font-size: 18px;
-    font-weight: bold;
-    font-family: bahnschrift;
-    text-align: center;
-    padding: 0;
-  }
-  #crow2 .row #scl-mkt2 {
-    font-size: 14px;
-    text-align: center;
-    padding: 8px;
-  }
-  #crow2 .row .button-section2 .container {
-    text-align: center;
-    padding: 0;
-  }
-  #crow2 .row #illustration-2 {
+  .crow2 .row #illustration-2 {
     display: none;
   }
-  #crow2 .row #illustration-2-m {
+  .crow2 .row #illustration-2-m {
     display: block;
     width: 100%;
     padding-bottom: 20px;
+    padding-left: 80px;
   }
-  #crow2 .row #illustration-2-m .container {
+  .crow2 .row #illustration-2-m .container {
     width: 90%;
     margin: auto;
   }
@@ -804,139 +805,25 @@ body {
     width: 100%;
     padding: 0px;
   }
-  #crow3 .row .container .card {
-    height: 30px;
-    border-radius: 50rem;
-    width: 98%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 10px auto;
-  }
-  #crow3 .row .container .card .card-body {
-    padding: 0px;
-    width: 85%;
-    margin: auto;
-  }
-  #crow3 .row .container .card .card-body .card-title {
-    padding: 0px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  #crow3 .row .container .card .card-body .card-title span {
-    font-size: 15px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-weight: bold;
-  }
-  #crow3 .row .container .card .card-body .card-title .glyphicon {
-    font-size: 15px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  #crow4 {
+  .crow3 {
     border-radius: 20px;
-    padding: 30px 15px;
   }
-  #crow4 .row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-  #crow4 .row .first-half {
-    padding-left: 0;
-    padding-top: 10px;
-  }
-  #crow4 .row #web-dev1 {
+  .crow3 .row .first-half #web-dev1 {
+    font-size: 23px;
     text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 0px;
+    padding-right: 60px;
+    padding-top: 0px;
   }
-  #crow4 .row #web-dev2 {
+  .crow3 .row .first-half #web-dev2 {
     font-size: 14px;
     text-align: center;
-    padding: 20px 60px;
+    padding-left: 10px;
+    padding-right: 50px;
   }
-  #crow4 .row .button-section2 .container {
-    text-align: center;
-  }
-  #crow4 #illustration-3 {
-    display: none;
-  }
-  #crow4 #illustration-3-m {
-    display: block;
-  }
-  #crow4 #illustration-3-m .container {
-    width: 100%;
+  .crow3 .row .first-half .button-section2 {
     padding-bottom: 20px;
-  }
-  #crow5 {
-    border-radius: 20px;
-    padding: 30px 15px;
-  }
-  #crow5 .row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-  #crow5 .row .first-half {
-    padding-left: 0;
-    padding-top: 10px;
-  }
-  #crow5 .row #gr-ds1 {
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px;
-  }
-  #crow5 .row #gr-ds2 {
-    font-size: 14px;
-    text-align: center;
-    padding: 10px 60px;
-  }
-  #crow5 .row .button-section2 {
-    padding-bottom: 20px;
-  }
-  #crow5 .row .button-section2 .container {
-    text-align: center;
-  }
-  #crow5 #illustration-4 {
-    display: none;
-  }
-  #crow5 #illustration-4-m {
-    display: block;
-  }
-  #crow5 #illustration-4-m .container {
-    width: 100%;
-    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-left: 10px;
   }
   #crow6 {
     display: none;

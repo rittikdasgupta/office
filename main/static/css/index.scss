@@ -58,7 +58,7 @@ body{
                 i{
                     position: relative;
                     left:15px;
-                    top:32px;
+                    top:35px;
                 }
             }
             .form-control{
@@ -639,49 +639,54 @@ body{
     }
     //END UNMATCHED SERVICES
 
-    //SOCIAL MEDIA MARKETING
-    #crow2{
+    //SOCIAL MEDIA MARKETING, GRAPHICS
+    .crow2{
         border-radius: 20px;
-        padding: 30px 15px;
         .row{
             display: flex;
             flex-direction: column-reverse;
+            
             .first-half{
-                padding-top: 10px;
-            }
-            #scl-mkt1{
-                font-size: 18px;
-                font-weight: bold;
-                font-family: bahnschrift;
+                padding-top: 0px;
                 text-align: center;
-                padding:0;
-            }
-            #scl-mkt2{
-                font-size:14px;
-                text-align: center;
-                padding:8px;
-            }
-            .button-section2{
-                .container{
+                #scl-mkt1, #gr-ds1{
                     text-align: center;
-                    padding:0;
+                    padding-right: 120px;
+                    font-size: 23px;
+                }
+                #scl-mkt2, #gr-ds2{
+                    padding-left: 0px;
+                    text-align: center;
+                    padding-right: 100px;
+                }
+                .button-section2{
+                    .container{
+                        padding-left: 0px;
+                        padding-right: 230px;
+                        padding-top: 10px;
+                        padding-bottom: 30px;
+                    }
                 }
             }
             #illustration-2{
-               display: none;
-            }
-            #illustration-2-m{
-                display: block;
-                width: 100%;
-                padding-bottom: 20px;
-                .container{
-                    width:90%;
-                    margin:auto;
+                   display: none;
                 }
-            }
+            #illustration-2-m{
+                    display: block;
+                    width: 100%;
+                    padding-bottom: 20px;
+                    padding-left: 80px;
+                    .container{
+                        width:90%;
+                        margin:auto;
+                        #social-marketing{
+                            
+                        }
+                    }
+            }          
         }
     }
-    //END SOCIAL MEDIA MARKETING
+    //END SOCIAL MEDIA MARKETING, GRAPHICS
 
     //STRATEGY , CONTENT ,PLATFORM
     #crow3{
@@ -693,120 +698,31 @@ body{
         width:100%;
         padding:0px;
     }
-    #crow3 .row .container .card {
-        height: 30px;
-        border-radius: 50rem;
-        width:98%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin:10px auto;
-        .card-body{
-            padding:0px;
-            width:85%;
-            margin:auto;
-            .card-title{
-                padding:0px;
-                display: flex;
-                justify-content: space-between;
-                span{
-                    font-size: 15px;
-                    display: flex;
-                    align-items: center;
-                    font-weight: bold;
-                }
-                .glyphicon{
-                    font-size: 15px;
-                    display: flex;
-                    align-items: center;
-                }
-            }
-        }
-    }
-    // END STRATEGY, CONTENT, PLATFORM
-
-    //WEB DEVELOPMENT & DESIGN
-    #crow4{
+    .crow3{
         border-radius: 20px;
-        padding: 30px 15px;
         .row{
-            display: flex;
-            flex-direction: column-reverse;
             .first-half{
-                padding-left:0;
-                padding-top: 10px;
-            }
-            #web-dev1{
-                text-align: center;
-                font-size: 18px;
-                font-weight: bold;
-                padding:0px;
-            }
-            #web-dev2{
-                font-size:14px;
-                text-align: center;
-                padding:20px 60px;
-            }
-            .button-section2{
-                .container{
+                #web-dev1{
+                    font-size: 23px;
                     text-align: center;
+                    padding-right: 60px;
+                    padding-top: 0px;
+                }
+                #web-dev2{
+                    font-size: 14px;
+                    text-align: center;
+                    padding-left: 10px;
+                    padding-right: 50px;
+                }
+                .button-section2{
+                    padding-bottom: 20px;
+                    padding-top: 15px;
+                    padding-left: 10px;
                 }
             }
         }
-        #illustration-3{
-            display: none;
-        }
-        #illustration-3-m{
-            display: block;
-            .container{
-                width:100%;
-                padding-bottom:20px;
-            }
-        }
     }
-    //END WEB DEVELOPMENT & DESIGN
-
-    //GRAPHIC DESIGN
-    #crow5{
-        border-radius: 20px;
-        padding: 30px 15px;
-        .row{
-            display: flex;
-            flex-direction: column-reverse;
-            .first-half{
-                padding-left:0;
-                padding-top: 10px;
-            }
-            #gr-ds1{
-                text-align: center;
-                font-size: 18px;
-                font-weight: bold;
-                padding:10px;
-            }
-            #gr-ds2{
-                font-size:14px;
-                text-align: center;
-                padding:10px 60px;
-            }
-            .button-section2{
-                padding-bottom: 20px;
-                .container{
-                    text-align: center;
-                }
-            }
-        }
-        #illustration-4{
-            display: none;
-        }
-        #illustration-4-m{
-            display: block;
-            .container{
-                width:100%;
-                padding-bottom:20px;
-            }
-        }
-    }
-    //END GRAPHIC DESIGN
+    
 
     //WHY CHOOSE US
     #crow6{

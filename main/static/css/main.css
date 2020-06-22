@@ -489,7 +489,10 @@ html {
     padding-right: 0px;
   }
   #crow7 .footer-right {
-    padding: 50px 5px 20px 10px;
+    padding: 50px 0px 20px 0px;
+  }
+  #crow7 .footer-right .footer-btn {
+    font-size: 9px;
   }
   #crow7 .footer-right .row {
     padding: 10px;
