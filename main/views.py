@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .forms import UserContact
 
 # Create your views here.
 def homepage(request):
@@ -21,5 +22,9 @@ def socialmedia(request):
 
 def team(request):
     return render(request,'main/team.html')
-def contact(request):
-    return render(request,'main/contact.html')
+# def showformdata(request):
+#     return render(request,'main/contact.html')
+
+def showformdata(request):
+    frm = UserContact()
+    return render(request, 'main/contact.html', {'form': frm})
