@@ -637,11 +637,6 @@ $footerBgColor:#0b2d35;
     //---------------------------END SERVICE TABS MOBILE-----------------------
 
 
-    //-------------------------------BUSINESS SECTION--------------------------
-    #business-section{
-        transform: translateY(-4vh);
-    }
-
     //------------------------------UNMATCHED SERVICES---------------------------
     #crow1{
         width:95%;
@@ -798,9 +793,7 @@ $footerBgColor:#0b2d35;
         */
     }
     //---------------------------------END WHY CHOOSE US-----------------------------
-    #crow7{
-        position:relative;
-        bottom:0;
+    #crow7{ 
         .footer-right-wrapper{
             .footer-right{
                 padding-top:40px;
