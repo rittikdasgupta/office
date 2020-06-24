@@ -402,6 +402,8 @@ body {
     border-bottom: 2px solid orangered;
     -webkit-transition: 0.25s ease-in-out;
     transition: 0.25s ease-in-out;
+    -webkit-box-shadow: 12px 12px 10px #969696, -12px -12px 10px #fffffff2;
+            box-shadow: 12px 12px 10px #969696, -12px -12px 10px #fffffff2;
   }
   .member-role {
     color: #4b4b4b;
@@ -433,6 +435,10 @@ body {
   }
   .member-role {
     color: grey;
+  }
+  .cards:hover {
+    -webkit-box-shadow: 12px 12px 10px #969696, -12px -12px 10px #fffffff2;
+            box-shadow: 12px 12px 10px #969696, -12px -12px 10px #fffffff2;
   }
 }
 /*# sourceMappingURL=team.css.map */

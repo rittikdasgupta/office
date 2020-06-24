@@ -310,6 +310,7 @@ body{
             .cards:hover{
                 border-bottom: 2px solid orangered;
                 transition: 0.25s ease-in-out;
+                box-shadow: 12px 12px 10px #969696, -12px -12px 10px #fffffff2;
             }
         }
     }
@@ -348,4 +349,7 @@ body{
     .member-role{
         color:grey;
     }
+    .cards:hover{
+            box-shadow: 12px 12px 10px #969696, -12px -12px 10px #fffffff2;}
+
 }
