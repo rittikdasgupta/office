@@ -16,14 +16,8 @@ body {
   font-weight: normal;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  -webkit-box-shadow: 0px 0px 15px #000000, 
- 0px -10px 15px #242424,
- 0px -14px 15px #3a3a3a,
- 0px -18px 15px #3d3d3d;
-          box-shadow: 0px 0px 15px #000000, 
- 0px -10px 15px #242424,
- 0px -14px 15px #3a3a3a,
- 0px -18px 15px #3d3d3d;
+  -webkit-box-shadow: 0px 0px 15px #000000,  0px -10px 15px #242424, 0px -14px 15px #3a3a3a, 0px -18px 15px #3d3d3d;
+          box-shadow: 0px 0px 15px #000000,  0px -10px 15px #242424, 0px -14px 15px #3a3a3a, 0px -18px 15px #3d3d3d;
 }
 
 .navbar .navcont {
@@ -167,10 +161,8 @@ body {
 
 .cards-wrapper .cards-content .cards {
   background-color: #1c1c1c;
-  -webkit-box-shadow: 13px 13px 15px #000000, 
- -13px -13px 15px #242424;
-          box-shadow: 13px 13px 15px #000000, 
- -13px -13px 15px #242424;
+  -webkit-box-shadow: 13px 13px 15px #000000,  -13px -13px 15px #242424;
+          box-shadow: 13px 13px 15px #000000,  -13px -13px 15px #242424;
   border-radius: 15px;
   border-bottom: 1.5px solid teal;
   padding: 30px 0px;
@@ -371,14 +363,8 @@ body {
   .navbar {
     background-color: #ebebeb;
     border: 1px solid #ebebeb;
-    -webkit-box-shadow: 0px 0px 15px #777777, 
- 0px -10px 15px #919191,
- 0px -14px 15px #b6b6b6,
- 0px -18px 15px #d8d8d8;
-            box-shadow: 0px 0px 15px #777777, 
- 0px -10px 15px #919191,
- 0px -14px 15px #b6b6b6,
- 0px -18px 15px #d8d8d8;
+    -webkit-box-shadow: 0px 0px 15px #777777,  0px -10px 15px #919191, 0px -14px 15px #b6b6b6, 0px -18px 15px #d8d8d8;
+            box-shadow: 0px 0px 15px #777777,  0px -10px 15px #919191, 0px -14px 15px #b6b6b6, 0px -18px 15px #d8d8d8;
   }
   .navbar .navbar-brand {
     padding: 0;
@@ -408,10 +394,8 @@ body {
   }
   .cards-wrapper .cards-content .cards {
     background-color: #ebebeb;
-    -webkit-box-shadow: 10px 10px 10px #cccccc, 
- -10px -10px 10px #fefefe;
-            box-shadow: 10px 10px 10px #cccccc, 
- -10px -10px 10px #fefefe;
+    -webkit-box-shadow: 10px 10px 10px #cccccc,  -10px -10px 10px #fefefe;
+            box-shadow: 10px 10px 10px #cccccc,  -10px -10px 10px #fefefe;
     border-bottom: 2px solid #02adad;
     -webkit-transition: -webkit-box-shadow 0.2s ease-in-out;
     transition: -webkit-box-shadow 0.2s ease-in-out;
@@ -419,10 +403,8 @@ body {
     transition: box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
   }
   .cards-wrapper .cards-content .cards:hover {
-    -webkit-box-shadow: 12px 12px 10px #a0a0a0, 
- -12px -12px 10px #fefefe;
-            box-shadow: 12px 12px 10px #a0a0a0, 
- -12px -12px 10px #fefefe;
+    -webkit-box-shadow: 12px 12px 10px #a0a0a0,  -12px -12px 10px #fefefe;
+            box-shadow: 12px 12px 10px #a0a0a0,  -12px -12px 10px #fefefe;
   }
   .member-role {
     color: #4b4b4b;
@@ -460,5 +442,10 @@ body {
     .member-role{
         color:grey;
     }
+<<<<<<< HEAD
+    
+
+}
+=======
 }*/
 /*# sourceMappingURL=team.css.map */
