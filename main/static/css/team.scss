@@ -276,6 +276,7 @@ body{
             img{
                 display: none;
             }
+            
         }
         .flexbox{
             .sub-nav{
@@ -306,6 +307,7 @@ body{
                 box-shadow: 10px 10px 10px #cccccc, 
                             -10px -10px 10px #fefefe;
                 border-bottom: 2px solid #02adad;
+                transition: box-shadow 0.25s ease-in-out;
             }
             .cards:hover{
                 border-bottom: 2px solid orangered;
@@ -349,7 +351,6 @@ body{
     .member-role{
         color:grey;
     }
-    .cards:hover{
-            box-shadow: 12px 12px 10px #969696, -12px -12px 10px #fffffff2;}
+    
 
 }

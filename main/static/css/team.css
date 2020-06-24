@@ -397,6 +397,10 @@ body {
     -webkit-box-shadow: 10px 10px 10px #cccccc,  -10px -10px 10px #fefefe;
             box-shadow: 10px 10px 10px #cccccc,  -10px -10px 10px #fefefe;
     border-bottom: 2px solid #02adad;
+    -webkit-transition: -webkit-box-shadow 0.25s ease-in-out;
+    transition: -webkit-box-shadow 0.25s ease-in-out;
+    transition: box-shadow 0.25s ease-in-out;
+    transition: box-shadow 0.25s ease-in-out, -webkit-box-shadow 0.25s ease-in-out;
   }
   .cards-wrapper .cards-content .cards:hover {
     border-bottom: 2px solid orangered;
@@ -435,10 +439,6 @@ body {
   }
   .member-role {
     color: grey;
-  }
-  .cards:hover {
-    -webkit-box-shadow: 12px 12px 10px #969696, -12px -12px 10px #fffffff2;
-            box-shadow: 12px 12px 10px #969696, -12px -12px 10px #fffffff2;
   }
 }
 /*# sourceMappingURL=team.css.map */
