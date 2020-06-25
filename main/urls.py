@@ -12,5 +12,4 @@ urlpatterns = [
     path("graphics/", views.graphicsdesign, name="graphicsdesign"),
     path("socialmedia/", views.socialmedia, name="socialmedia"),
     path("team/", views.team, name="team"),
-    path("contact/",views.showformdata,name="contact")
 ]
