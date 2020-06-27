@@ -1,10 +1,11 @@
 {% extends "main/main.html" %}
 {% block link %}
 <link rel="stylesheet" type="text/css" href="../../static/css/index.css">
+<link rel="stylesheet" type="text/css" href="../../static/css/all.min.css">
 <script src="../../static/js/animation.js" defer></script>
 {% endblock %}
 {% block content %}
-<!--HERO BANNER-->
+<!--HERO BANNER PC-->
 <section style="width: 100%;">
     <section id="content-wrapper">
         <div class="overlay1">
@@ -13,25 +14,58 @@
                     <span id="hero-text">Grow your online business faster!</span>
                 </div>
                 <div class="row form-wrapper">
-                    <form class="main-form">
+                    <form class="main-form pageclip-form" action="https://send.pageclip.co/0xMsXCmNr4Fz58UnApxMjwZJZAAUvfGK"  method="post">
                         <div class="form-group">
-                            <i class="fas fa-user"></i>
-                            <input type="text" placeholder="        FirstName" class="form-control">
+                            <i class="fas fa-user fa-lg"></i>
+                            <input type="text" placeholder="FirstName" class="form-control">
                         </div>
                         <div class="form-group">
                             <i class="far fa-envelope fa-lg"></i>
-                            <input type="email" placeholder="          Email" class="form-control">
+                            <input type="email" placeholder="Email" class="form-control">
                         </div>
                     </form>
                 </div>
-                <div class="row container hero-text-2-container">
-                    <span id="hero-text-2">Claim your free 30-minute strategy session</span>
+                <div class="row container">
+                    <div class="hero-text-2-container">
+                        <button type="submit" style="background-color: transparent;border:none" class="pageclip-form__submit">
+                            <span class="hero-text-2">Claim your free 30-minute strategy session</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 </section>
 <!--END HERO BANNER-->
+
+
+<!--HERO BANNER MOBILE-->
+<section class="row hero-banner-mobile-wrapper">
+    <div class="hero-banner-mobile-content col-xs-12">
+        <div class="hero-banner-heading-wrapper">
+            <div id="hero-banner-heading">GROW YOUR</div>
+            <div id="hero-banner-heading">ONLINE BUSINESS</div>
+            <div id="hero-banner-heading">FASTER</div>
+        </div>
+        <form class="header-banner-mobile-form">
+            <div class="form-group">
+                <i class="fas fa-user fa-lg"></i>
+                <input class="form-control" type="text" placeholder="Firstname">
+            </div>
+            <div class="form-group">
+                <i class="far fa-envelope fa-lg"></i>
+                <input class="form-control" type="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-outline-info form-control">
+                    CLAIM YOUR STRATEGY SESSION
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+<!--END HERO BANNER MOBILE-->
+
 
 <!--SERVICE CARDS FOR PC VIEW-->
 <div class="row card-wrapper" id="service-cards-lg">
@@ -42,7 +76,7 @@
     </div>
     <div class="container card-container">
         <div class="col-xs-2 card-content" id="card1">
-            <a href="/socialmedia">
+            <a href="/socialmedia" target="_self">
                 <div class="col-xs-12 row-wrapper-header">
                     <span id="card-icon"><i class="fas fa-dollar-sign fa-2x icon-1" id="card-header-icon"></i></span>
                 </div>
@@ -57,7 +91,7 @@
             </a>
         </div>
         <div class="col-xs-2 card-content" id="card2">
-            <a href="/wd">
+            <a href="/wd" target="_self">
                 <div class="col-xs-12 row-wrapper-header">
                     <span id="card-icon"><i class="fas fa-code fa-2x icon-2" id="card-header-icon"></i></span>
                 </div>
@@ -72,7 +106,7 @@
             </a>
         </div>
         <div class="col-xs-2 card-content" id="card3">
-            <a href="/graphics">
+            <a href="/graphics" target="_self">
                 <div class="col-xs-12 row-wrapper-header">
                     <span id="card-icon"><i class="fas fa-pen-nib fa-2x icon-3" id="card-header-icon"></i></span>
                 </div>
@@ -87,17 +121,19 @@
             </a>
         </div>
         <div class="col-xs-2 card-content" id="card4">
-            <div class="col-xs-12 row-wrapper-header">
-                <span id="card-icon"><i class="fas fa-chess-knight fa-2x icon-4" id="card-header-icon"></i></span>
-            </div>
-            <div class="col-xs-12">
-                <span id="card-text">
-                    STRATEGY
-                </span>
-            </div>
-            <div class="col-xs-12 i4" id="row-wrapper-footer">
-                <span id="right-arrow"><i class="fas fa-angle-right fa-2x"></i></span>
-            </div>
+            <a href="#" target="_self">
+                <div class="col-xs-12 row-wrapper-header">
+                    <span id="card-icon"><i class="fas fa-chess-knight fa-2x icon-4" id="card-header-icon"></i></span>
+                </div>
+                <div class="col-xs-12">
+                    <span id="card-text">
+                        STRATEGY
+                    </span>
+                </div>
+                <div class="col-xs-12 i4" id="row-wrapper-footer">
+                    <span id="right-arrow"><i class="fas fa-angle-right fa-2x"></i></span>
+                </div>
+            </a>
         </div>
     </div>
 </div>
@@ -106,44 +142,52 @@
 <!--SERVICE TABS MOBILE-->
 <div class="row card-wrapper-xs" id="service-cards-xs">
     <div class="col-xs-6 col-sm-4 service-tab-grid">
-        <div class="col-xs-12 service-card-content-xs" id="tab1">
-            <div class="service-symbol">
-                <i class="fas fa-dollar-sign"></i>
+        <a href="/socialmedia" target='_self' class="service-link">
+            <div class="col-xs-12 service-card-content-xs" id="tab1">
+                <div class="service-symbol">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <div class="service-tab-content">
+                    Social Media Marketing
+                </div>
             </div>
-            <div class="service-tab-content">
-                Social Media Marketing
-            </div>
-        </div>
+        </a>
     </div>
     <div class="col-xs-6 col-sm-4 service-tab-grid">
-        <div class="col-xs-12 service-card-content-xs" id="tab2">
-            <div class="service-symbol">
-                <i class="fas fa-code" id="code-sym2"></i>
+        <a href="/wd" target="_self" class="service-link">
+            <div class="col-xs-12 service-card-content-xs" id="tab2">
+                <div class="service-symbol">
+                    <i class="fas fa-code" id="code-sym2"></i>
+                </div>
+                <div class="service-tab-content">
+                    Web Design & Development
+                </div>
             </div>
-            <div class="service-tab-content">
-                Web Design & Development
-            </div>
-        </div>
+        </a>
     </div>
     <div class="col-xs-6 col-sm-4 service-tab-grid">
-        <div class="col-xs-12 service-card-content-xs" id="tab3">
-            <div class="service-symbol">
-                <i class="fas fa-pen-nib" id="code-sym3"></i>
+        <a href="/graphics" target="_self" class="service-link">
+            <div class="col-xs-12 service-card-content-xs" id="tab3">
+                <div class="service-symbol">
+                    <i class="fas fa-pen-nib" id="code-sym3"></i>
+                </div>
+                <div class="service-tab-content">
+                    Graphic Design
+                </div>
             </div>
-            <div class="service-tab-content">
-                Graphic Design
-            </div>
-        </div>
+        </a>
     </div>
     <div class="col-xs-6 col-sm-4 service-tab-grid">
-        <div class="col-xs-12 service-card-content-xs" id="tab4">
-            <div class="service-symbol">
-                <i class="fas fa-chess-knight" id="code-sym4"></i>
+        <a href="#" target="_self" class="service-link">
+            <div class="col-xs-12 service-card-content-xs" id="tab4">
+                <div class="service-symbol">
+                    <i class="fas fa-chess-knight" id="code-sym4"></i>
+                </div>
+                <div class="service-tab-content">
+                    Strategy
+                </div>
             </div>
-            <div class="service-tab-content">
-                Strategy
-            </div>
-        </div>
+        </a>
     </div>
 </div>
 <div class="row" id="register-section">
@@ -152,12 +196,14 @@
             <span id="lets-talk">Looking to maximise your online growth?</span>
         </div>
         <div class="col-xs-12 register-btn-wrapper">
-            <button class="btn register-btn">Let's Talk</button>
+            <a href="/contact" target="_self">
+                <button class="btn register-btn">Let's Talk</button>
+            </a>
         </div>
     </div>
 </div>
 <!--END SERVICE TAB MOBILE-->
-</section>
+
 <!--HEADER AND WHY CHOOSE US-->
 
 
@@ -192,7 +238,9 @@
                         <span>Looking to maximise your online growth?</span>
                     </div>
                     <div class="col-xs-4">
-                        <button class="btn">Let's Talk</button>
+                        <a href="/contact" target="_self">
+                            <button class="btn">Let's Talk</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -232,15 +280,6 @@
                 </div>
             </div>
         </div>
-        <!--Mobile Illustration-->
-        <div class="col-xs-12 col-md-6" id="illustration-2-m">
-            <div class="container">
-                <div class="col-xs-12 illustration-align">
-                    <img src="../../static/assets/sm.png" class='img-responsive' id="social-marketing1">
-                </div>
-            </div>
-        </div>
-        <!--Mobile Illustration Ends-->
 </section>
 <!--SOCIAL MEDIA MARKETING END-->
 
@@ -257,13 +296,14 @@
             </div>
         </div>
         <!--Mobile Illustration-->
+        <!--
         <div class="col-xs-12 col-md-6" id="illustration-3-m">
             <div class="container">
                 <div class="col-xs-12 illustration-align">
                     <img src="../../static/assets/wdd.png" class='img-responsive' id="social-marketing">
                 </div>
             </div>
-        </div>
+        </div>-->
         <!--Mobile Illustration End-->
         <div class="col-xs-12 col-md-6 first-half">
             <div class="row">
@@ -298,7 +338,7 @@
             </div>
             <div class="row button-section2">
                 <div class="container">
-                    <a href="/graphics" target="_blank">
+                    <a href="/graphics" target="_self">
                         <button class="btn know-more" id="gr-ds3">Know More <span class="glyphicon glyphicon-chevron-right" style="color: #48929a;padding:2px;position: relative;top:2px;"></button>
                     </a>
                 </div>
@@ -311,15 +351,6 @@
                 </div>
             </div>
         </div>
-        <!--Mobile Illustration-->
-        <div class="col-xs-12 col-md-6" id="illustration-2-m">
-            <div class="container">
-                <div class="col-xs-12 illustration-align">
-                    <img src="../../static/assets/graphic ds.png" class='img-responsive' id="social-marketing">
-                </div>
-            </div>
-        </div>
-        <!--Mobile Illustration Ends-->
     </div>
 </section>
 <!--Graphic Design Ends-->
@@ -336,15 +367,6 @@
                 </div>
             </div>
         </div>
-        <!--Mobile Illustration-->
-        <div class="col-xs-12 col-md-6" id="illustration-3-m">
-            <div class="container">
-                <div class="col-xs-12 illustration-align">
-                    <img src="../../static/assets/strategy.png" class='img-responsive' id="social-marketing">
-                </div>
-            </div>
-        </div>
-        <!--Mobile Illustration End-->
         <div class="col-xs-12 col-md-6 first-half">
             <div class="row">
                 <span class="col-xs-12 col-md-8 heading" id="web-dev1">STRATEGY</span>
@@ -354,7 +376,7 @@
             </div>
             <div class="row button-section2">
                 <div class="container">
-                    <a href="/wd" target="_self">
+                    <a href="#" target="_self">
                         <button class="btn know-more" id="web-dev3">Know More <span class="glyphicon glyphicon-chevron-right" style="color: #296866;padding:2px;position: relative;top:2px;"></button>
                     </a>
                 </div>
@@ -366,38 +388,53 @@
 
 <!--WHY CHOOSE US-->
 <section id='crow6'>
-    <div class="row text-center">
-        <h1 style="font-family: Arial, Helvetica, sans-serif;font-weight:600;">Why Choose Us?</h1>
-    </div>
-    <div class="row">
-        <div class="container text-cont">
-            <div class="timeline-text col-xs-3" id="a1">Indepth Knowledge</div>
-            <div class="timeline-text col-xs-4 text-center" id="a2">Competive Pricing</div>
-            <div class="timeline-text col-xs-3 text-right" id="a3">Money Back Guarantee</div>
+    <section class="text-gray-700 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="text-center mb-20">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4 ">WHY CHOOSE US?</h1>
+          </div>
+          <div class="promise-cards-wrapper">
+                <div class="promise-cards-content">
+                    <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+                        <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center col-xs-12 col-md-4 promise-cards">
+                            <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-teal-100 text-teal-500 mb-5 flex-shrink-0">
+                                <div class="tab-icon-wrapper">
+                                    <i class="far fa-eye fa-3x tab-icon"></i>
+                                </div>
+                            </div>
+                            <div class="flex-grow">
+                                <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Indepth Knowledge</h2>
+                                <p class="leading-relaxed text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur deserunt alias dolorum enim praesentium maiores architecto dolores voluptate accusamus, est, non possimus blanditiis. In praesentium impedit cupiditate. Minima, aut cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro incidunt iure ab voluptates optio dolore repudiandae sequi sit, eum ipsa alias eaque impedit facere earum voluptate quidem debitis laborum a!</p>
+                            </div>
+                        </div>
+                        <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center col-xs-12 col-md-4 promise-cards">
+                            <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-teal-100 text-teal-500 mb-5 flex-shrink-0">
+                                <div class="tab-icon-wrapper">
+                                    <i class="fas fa-bullseye fa-3x tab-icon"></i>
+                                </div>
+                            </div>
+                            <div class="flex-grow">
+                                <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Competitive Pricing</h2>
+                                <p class="leading-relaxed text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur deserunt alias dolorum enim praesentium maiores architecto dolores voluptate accusamus, est, non possimus blanditiis. In praesentium impedit cupiditate. Minima, aut cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro incidunt iure ab voluptates optio dolore repudiandae sequi sit, eum ipsa alias eaque impedit facere earum voluptate quidem debitis laborum a!</p>
+                            </div>
+                        </div>
+                        <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center col-xs-12 col-md-4 promise-cards">
+                            <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-teal-100 text-teal-500 mb-5 flex-shrink-0">
+                                <div class="tab-icon-wrapper">
+                                    <i class="fas fa-rupee-sign fa-3x tab-icon"></i>
+                                </div>
+                            </div>
+                            <div class="flex-grow">
+                                <h2 class="text-gray-900 text-lg title-font font-medium mb-3">MoneyBack Guarantee</h2>
+                                <p class="leading-relaxed text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur deserunt alias dolorum enim praesentium maiores architecto dolores voluptate accusamus, est, non possimus blanditiis. In praesentium impedit cupiditate. Minima, aut cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro incidunt iure ab voluptates optio dolore repudiandae sequi sit, eum ipsa alias eaque impedit facere earum voluptate quidem debitis laborum a!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="container">
-            <div class="timeline-dot a1" type="button" id="a111">
-                <div class="timeline-dot2" id="a11"></div>
-            </div>
-            <span id="hr"><hr></span>
-            <div class="timeline-dot a2" type="button" id="a222">
-                <div class="timeline-dot2" id="a12"></div>
-            </div>
-            <span id="hr"><hr></span>
-            <div class="timeline-dot a3" type="button" id="a222">
-                <div class="timeline-dot2" id="a13"></div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="container" style="width:90%;">
-            <div class="col-xs-12 text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur qui numquam exercitationem, expedita sapiente voluptate at ratione distinctio sequi provident iusto quidem porro consectetur officiis. Quod dolor mollitia officia nostrum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus amet laborum, sit asperiores sint voluptates officiis perspiciatis autem id praesentium nostrum quam iste blanditiis maxime voluptatum dolor dignissimos necessitatibus ea! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa et consequatur voluptatibus corporis explicabo repudiandae expedita similique ullam nostrum officiis vitae, porro provident exercitationem sit quod sapiente, unde dolor incidunt?
-            </div>
-        </div>
-    </div>
+      </section>
 </section>
 <!--WHY CHOOSE US ENDS-->
 
@@ -463,5 +500,3 @@
 </section>
 <!--END MOBILE DESIGN CAROUSEL SLIDER-->
 {% endblock %}
-</body>
-</html>
