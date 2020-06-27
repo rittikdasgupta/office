@@ -21,7 +21,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get("SECRET_KEY","default_value")
-PAGECLIP_API_KEY = os.environ.get("PAGECLIP_API_KEY","default_value")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -79,14 +78,7 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dgozjvkz',
-        'USER': 'dgozjvkz',
-        'PASSWORD': 'KDtJkFJ6YY-UVgpMQC7qtAIhXVCKeFEq',
-        'HOST': 'salt.db.elephantsql.com',
-        'PORT': '5432',
-    }
+    
 }
 
 
