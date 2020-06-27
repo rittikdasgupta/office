@@ -20,7 +20,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'ur!0)c^--@*6h+u2v5ia=!gu%-nww_eh$8n*^#ektac3x7x(fb'
+SECRET_KEY = os.environ.get('SECRET_KEY', "default_value")
+# SECRET_KEY = 'ur!0)c^--@*6h+u2v5ia=!gu%-nww_eh$8n*^#ektac3x7x(fb'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -31,7 +32,6 @@ ALLOWED_HOSTS = ["*"]
 # Application definition
 
 INSTALLED_APPS = [
-    'blog.apps.BlogConfig',
     'main.apps.MainConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -127,3 +127,8 @@ USE_TZ = True
 
 STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
 STATIC_URL = '/static/'
+
+# FLUTTERWAVE_PRIVATE_KEY = "FGRGH343333445"
+FLUTTERWAVE_PRIVATE_KEY = os.environ.get("FLUTTERWAVE_PRIVATE_KEY")
+# PAYSTACK_PRIVATE_KEY = "7896898098"
+PAYSTACK_PRIVATE_KEY = os.environ.get("PAYSTACK_PRIVATE_KEY")
