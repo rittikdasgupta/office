@@ -31,7 +31,6 @@ ALLOWED_HOSTS = ["*"]
 # Application definition
 
 INSTALLED_APPS = [
-    'blog.apps.BlogConfig',
     'main.apps.MainConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -120,3 +119,8 @@ USE_TZ = True
 
 STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
 STATIC_URL = '/static/'
+
+# FLUTTERWAVE_PRIVATE_KEY = "FGRGH343333445"
+FLUTTERWAVE_PRIVATE_KEY = os.environ.get("FLUTTERWAVE_PRIVATE_KEY")
+# PAYSTACK_PRIVATE_KEY = "7896898098"
+PAYSTACK_PRIVATE_KEY = os.environ.get("PAYSTACK_PRIVATE_KEY")
